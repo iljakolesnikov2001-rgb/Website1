@@ -297,8 +297,14 @@ body {
   .bottom-link {
     font-size: 17px;
   }
-  .truck {
+ .truck {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 520px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
   background: transparent;
-  width: clamp(300px, 40vw, 700px);
 }
 }
