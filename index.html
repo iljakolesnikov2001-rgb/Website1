@@ -4,50 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SVITrans</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="page">
-    <header class="topbar">
-      <div class="logo" aria-label="SVITrans">
-        <span class="logo-svi">SVI</span><span class="logo-trans">Trans</span>
-      </div>
+    <header class="header">
+      <div class="logo">SVI<span>Trans</span></div>
 
-      <nav class="nav" aria-label="Galvenā navigācija">
-        <a href="#" class="nav-btn">Galerēja</a>
-        <a href="#" class="nav-btn">Kontakti</a>
+      <nav class="top-nav" aria-label="Galvenā navigācija">
+        <a href="#" class="nav-button">Galerēja</a>
+        <a href="#" class="nav-button">Kontakti</a>
       </nav>
 
-      <section class="login-card" aria-label="Pieteikšanās forma">
-        <h2 class="login-title">LOGIN:</h2>
-        <form class="login-form">
-          <input type="text" placeholder="Login:" aria-label="Login" />
-          <input type="password" placeholder="Pass:" aria-label="Pass" />
+      <section class="login-panel" aria-label="Login">
+        <div class="login-title">LOGIN:</div>
+        <form id="loginForm" class="login-form">
+          <input type="text" placeholder="Login:" aria-label="Login">
+          <input type="password" placeholder="Pass:" aria-label="Password">
           <button type="submit">Pieslēgties</button>
         </form>
       </section>
     </header>
 
-    <div class="separator"></div>
+    <div class="divider"></div>
 
     <main class="hero">
-      <div class="truck-stage">
+      <section class="truck-area" aria-label="Truck image area">
         <div class="truck-shadow"></div>
         <img
           class="truck"
           src="https://pngimg.com/d/truck_PNG16240.png"
-          alt="Kravas auto"
-        />
-      </div>
+          alt="Truck"
+        >
+      </section>
 
-      <div class="quick-links" aria-label="Ātrās saites">
-        <a href="#" class="quick-link"><span class="qi">◔</span><span>CSDD.lv</span></a>
-        <a href="#" class="quick-link"><span class="qi">◒</span><span>ATD.lv</span></a>
-        <a href="#" class="quick-link"><span class="qi">▸</span><span>LV|Vi<span class="tiny">Gen</span></span></a>
-        <a href="#" class="quick-link quick-link-wide"><span class="qi dark">1V</span><span>Veiniette.eu</span></a>
+      <div class="bottom-links" aria-label="Useful links">
+        <a href="#" class="bottom-link"><span class="icon">◔</span><span>CSDD.lv</span></a>
+        <a href="#" class="bottom-link"><span class="icon">◒</span><span>ATD.lv</span></a>
+        <a href="#" class="bottom-link"><span class="icon">▸</span><span>LV|Vi<span class="small">Gen</span></span></a>
+        <a href="#" class="bottom-link wide"><span class="icon badge">1V</span><span>Veiniette.eu</span></a>
       </div>
     </main>
   </div>
