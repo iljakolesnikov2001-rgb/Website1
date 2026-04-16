@@ -299,5 +299,6 @@ body {
   }
   .truck {
   background: transparent;
+  width: clamp(300px, 40vw, 700px);
 }
 }
